@@ -1,0 +1,14 @@
+{
+  "python.pythonPath": "/Users/kingroyalx/.virtualenvs/anki/bin/python3",
+  "python.formatting.provider": "yapf",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.lintOnSave": true,
+  "indentRainbow.indentSetter": {
+    "python": { "tabSize": 4, "insertSpaces": true },
+    "json": { "tabSize": 2, "insertSpaces": true },
+    "md": { "tabSize": 2, "insertSpaces": true }
+  },
+  "editor.formatOnSave": false
+}
