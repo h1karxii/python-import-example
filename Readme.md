@@ -7,7 +7,11 @@
 - ch4.py
 - ch5.py
 - quiz1.py
+- ch6.py
 
+
+## __ name __
+- [Python - if __name__ == '__main__' 涵義](https://blog.castman.net/%E6%95%99%E5%AD%B8/2018/01/27/python-name-main.html)
 
 ## __ init __.py
 Python 的 package 其實視為一個資料夾包起來的所有東西，

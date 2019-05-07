@@ -20,21 +20,21 @@ sys.path.append('..')
 # for 執行位置: /python-import-example
 # exec command: python run/ch3.py
 sys.path.append('.')
-from mylib.lib import lib_print
+from mylib.lib1 import lib1_print
 # 實際上 append 的是「執行位置」的路徑
 ###################################################
 
 # ############### [import method 2] ###############
 # sys.path.append('/Users/kingroyalx/Code/practice/python-import-example')
-# from mylib.lib import lib_print
+# from mylib.lib1 import lib1_print
 ###################################################
 
 # ############### [import method 3] ###############
-# sys.path.append('/Users/kingroyalx/Code/practice/python-import-example/lib')
-# from mylib import lib_print
+# sys.path.append('/Users/kingroyalx/Code/practice/python-import-example/lib1')
+# from mylib import lib1_print
 ###################################################
 
-lib_print()
+lib1_print()
 
 
 """
