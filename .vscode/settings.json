@@ -1,14 +1,50 @@
 {
-  "python.pythonPath": "/Users/kingroyalx/.virtualenvs/anki/bin/python3",
-  "python.formatting.provider": "yapf",
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": false,
-  "python.linting.flake8Enabled": true,
-  "python.linting.lintOnSave": true,
+  "cSpell.words": ["Anki"],
   "indentRainbow.indentSetter": {
     "python": { "tabSize": 4, "insertSpaces": true },
     "json": { "tabSize": 2, "insertSpaces": true },
     "md": { "tabSize": 2, "insertSpaces": true }
   },
-  "editor.formatOnSave": false
+
+  //  [ General ]
+  // vscode python 擴充程式需要設定 python 路徑
+  "python.pythonPath": "",
+  // 設定 python func 自動註解引號格式
+  // 打三個單引號後按 Enter 便會為 func 自動產生註解樣板
+  "autoDocstring.quoteStyle": "'''",
+
+  //  [ Linter ]
+  // 打開 python linter
+  // 會檢查程式碼是否符合所開啟的 linter
+  // 如檢查發現問題則會以錯誤、警告或信息等形式顯示在 vscode 下方的問題頁面
+  // 同時在文本編輯器中以波浪線形式標示問題代碼
+  // 但是不會自動更新並排版程式碼
+  "python.linting.enabled": true,
+  // pylint 會做非常複雜的分析
+  // 例如會檢查 import 會不會失敗等等的跨檔案的檢查
+  // 因為 pylint 檢查比較耗時，在這邊把它關閉
+  "python.linting.pylintEnabled": false,
+  // flake8 只做單檔檢查，速度比較快，故使用
+  "python.linting.flake8Enabled": true,
+  // 在 python 文件保存時進行檢查
+  "python.linting.lintOnSave": true,
+
+  //  [ Formatter ]
+  // 選擇 yapf 作為 python 的程式碼格式化工具
+  // 可以根據設定自動排版程式碼(程式碼格式化)
+  "python.formatting.provider": "yapf",
+  "[python]": {
+    // 在 python 文件存檔時進行自動排版
+    "editor.formatOnSave": true,
+    // 在 python 文件存檔時使用 Isort 排版 import 的部分
+    // warging: 可能會跟原本的 formatter 產生衝突
+    // ref: https://github.com/Microsoft/vscode-python/issues/5545
+    //      https://github.com/Microsoft/vscode-python/issues/2301
+    "editor.codeActionsOnSave": {
+      // 這個選項的意義為讓 vscode 幫你排版 import 的部分的程式碼
+      // 但是 vscode python extension 自帶 Isort
+      // 所以就是等同是用 Isort 來自動排版
+      "source.organizeImports": true
+    }
+  }
 }

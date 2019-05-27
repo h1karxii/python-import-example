@@ -8,12 +8,17 @@
 - ch5.py
 - quiz1.py
 - ch6.py
+- 補充說明
 
 
-## __ name __
+## 補充說明
+
+### __ name __
 - [Python - if __name__ == '__main__' 涵義](https://blog.castman.net/%E6%95%99%E5%AD%B8/2018/01/27/python-name-main.html)
 
-## __ init __.py
+---
+
+### __ init __.py
 Python 的 package 其實視為一個資料夾包起來的所有東西，
 但是這個資料夾裡面一定要有一個檔案__init__.py (內容是空的也沒關係)，
 Python 在 import的時候才不會出錯，
@@ -30,8 +35,9 @@ Python 在解譯的時候才會把這個資料夾視為一個 package，
 - [__init__.py 文件的作用以及意义](https://blog.csdn.net/xiaocaibai/article/details/80542920)
 - [[问与答]Python中__all__的作用 ？](https://blog.csdn.net/orangleliu/article/details/49848413)
 
+---
 
-## sys.modules
+### sys.modules
 既然python是在sys.path中搜索模塊的，
 那載入的模塊存放在何處？答案就是sys.modules，是存放已載入模塊的地方。
 模塊一經載入，python會把這個模塊加入sys.modules中供下次載入使用，
@@ -63,8 +69,9 @@ PYTHONPATH可以視為系統的PATH變量一類的東西，其中包含若干個
 - [python的模块加载和路径查找](https://wecatch.me/blog/2016/05/28/python-module-path-find/)
 - [Python : __init__.py的作用](https://my.oschina.net/cloudcoder/blog/201271)
 
+---
 
-## import 的相對與絕對路徑
+### import 的相對與絕對路徑
 不是 sys.path 時的相對與絕對路徑喔
 
 絕對導入的格式為import A.B或from A import B，
@@ -87,8 +94,9 @@ PYTHONPATH可以視為系統的PATH變量一類的東西，其中包含若干個
 
 - [Python 相對導入與絕對導入](http://kuanghy.github.io/2016/07/21/python-import-relative-and-absolute)
 
+---
 
-## python 的 import
+### python 的 import
 - [[Python] 解決 import 相對路徑執行問題](https://medium.com/bryanyang0528/python-%E8%A7%A3%E6%B1%BA%E7%9B%B8%E5%B0%8D%E8%B7%AF%E5%BE%91%E5%9F%B7%E8%A1%8C%E5%95%8F%E9%A1%8C-5cb157d22ab0)
 - [Python 的 Import 陷阱](https://medium.com/pyladies-taiwan/python-%E7%9A%84-import-%E9%99%B7%E9%98%B1-3538e74f57e3)
 - [Python import 簡易教學](https://medium.com/@alan81920/python-import-%E7%B0%A1%E6%98%93%E6%95%99%E5%AD%B8-c98e8e2553d3)

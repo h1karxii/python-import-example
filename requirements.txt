@@ -1,0 +1,24 @@
+# [ default ](installed by virtualenv)
+# wheel
+# setuptools
+
+
+# [ tool ]
+pipdeptree
+jupyter
+pre-commit
+commitizen
+
+
+# [ python linter ]
+flake8
+flake8-quotes
+
+
+# [ python formatter ]
+yapf
+isort
+seed-isort-config
+
+
+# [ project ]
